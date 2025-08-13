@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha's Bio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .bio-box {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 25px 35px;
+            border-radius: 15px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .bio-box h2 {
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #444;
+        }
+
+        .bio-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+            background: #ff7eb3;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+            margin-top: 25px;
+        }
+
+        .btn:hover {
+            background: #ff4d94;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="bio-box">
+        <h3>Hi, I'm </h3>
+        <h1>Isha</h1>
+        <p>My Course at Codroid Hub is..</p>
+        <h1>Data Analytics</h1>
+        <p>
+            I am currently pursuing Data Analytics and have a passion for transforming data into meaningful insights. 
+            I enjoy exploring datasets, finding hidden patterns, and creating visual stories that make data easy to understand. 
+            My curiosity drives me to learn continuously and keep improving my analytical skills.
+        </p>
+    </div>
+
+    <a href="{{ url_for('second_page') }}" class="btn">Go Back</a>
+</body>
+</html>
