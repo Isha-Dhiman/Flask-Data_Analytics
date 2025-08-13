@@ -67,10 +67,11 @@ def bar():
     
 
 if(__name__) == '__main__':
-    app.run(port=3000,debug=True)
+    app.run(port=3000,debug=False, host = "0.0.0.0")
     
     #you need this to show the flask app and show web pages.
    # flask is the python library
    # Flask is the class
    # render means to take an html file and send it to the browser so that user can see it as a web page
+
 #render_templates help to load the html file
